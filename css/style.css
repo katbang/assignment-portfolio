@@ -1,0 +1,90 @@
+:root {
+  --primary-color1: #efede5;
+  --primary-color2: #e6dec2;
+  --secondary-color: #1a2b26;
+  --accent-color: #666d36;
+  --font-display: "Phudu", cursive;
+  --font-paragraph: "Josefin Sans", sans-serif;
+  --display-large-size: 5.6rem;
+  --display-medium-size: 4.209rem;
+  --display-small-size: 2.369rem;
+  --small-header-size: 1.777rem;
+  --paragraph-medium-size: 1.333rem;
+  --paragraph-small-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body {
+  background-color: var(--primary-color2);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+nav {
+  margin: 2rem 0;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  justify-content: space-evenly;
+}
+li {
+  list-style: none;
+}
+a {
+  font-family: var(--font-paragraph);
+  font-size: var(--paragraph-medium-size);
+}
+a:link,
+a:visited {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-color);
+}
