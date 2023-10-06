@@ -32,9 +32,11 @@
         end 850px får containeren et seks-kolonners grid. Dette grid erstattes
         med et fem-kolonners grid, når sidens bredde ligger mellem 850px og
         560px. Jeg har placeret de forskellige indholdselementer ved at bruge
-        property'en "grid-area". Den grafiske flades property "display" sættes
-        til værdien "none", når siddens bredde bliver mindre end 850px. Billedet
-        får en border-radius på 1rem ved breakpointet width>560px.
+        property'en "grid-area". Billedets placering vil ved breakpointet 850px
+        spænde fra række 1 til og med række fire og fra kolonne 3 til og med
+        kolonne 4 (grid-area: 1/3/5/5). Den grafiske flades property "display"
+        sættes til værdien "none", når siddens bredde bliver mindre end 850px.
+        Billedet får en border-radius på 1rem ved breakpointet width>560px.
         Div-elementet, som indeholder CTA-knappen, styles vha. en flexbox.
       </p>
       <div class="container">
