@@ -177,7 +177,10 @@ p {
 
     > img {
       margin-inline-start: -0.7rem;
-      transform: translateY(-3.3rem);
+      margin-top: -3.5rem;
+    }
+    > div:last-child {
+      margin-top: -4.7rem;
     }
   }
 

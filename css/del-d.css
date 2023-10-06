@@ -36,7 +36,7 @@
 }
 .card-wrapper:nth-child(2),
 .card-wrapper:nth-child(3) {
-  background-color: #e3e9d2;
+  background-color: #f0f7dc;
   border-radius: 1rem;
 
   & h1,
@@ -94,7 +94,7 @@ h2 {
     object-fit: cover;
   }
 }
-@container card (width > 400px) {
+@container card (width > 550px) {
   h2 {
     font-family: var(--font-display);
     font-size: var(--small-header-size);

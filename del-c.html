@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/del-c.css" />
-    <title>Document</title>
+    <title>Del C</title>
   </head>
   <body>
     <header>
@@ -27,7 +27,16 @@
     </header>
     <main>
       <h1 class="headline">Del C</h1>
-      <p></p>
+      <p class="description">
+        Der er breakpoints ved 850px og 560px. Når sidens bredde bliver større
+        end 850px får containeren et seks-kolonners grid. Dette grid erstattes
+        med et fem-kolonners grid, når sidens bredde ligger mellem 850px og
+        560px. Jeg har placeret de forskellige indholdselementer ved at bruge
+        property'en "grid-area". Den grafiske flades property "display" sættes
+        til værdien "none", når siddens bredde bliver mindre end 850px. Billedet
+        får en border-radius på 1rem ved breakpointet width>560px.
+        Div-elementet, som indeholder CTA-knappen, styles vha. en flexbox.
+      </p>
       <div class="container">
         <div class="block"></div>
         <img src="img/del-c.png" alt="Living room" />
