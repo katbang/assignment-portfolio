@@ -88,3 +88,18 @@ a:visited {
 a:hover {
   color: var(--accent-color);
 }
+.headline {
+  font-family: var(--font-display);
+  font-size: var(--display-small-size);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0;
+  margin: 2rem 0;
+}
+.description {
+  font-family: var(--font-paragraph);
+  font-size: var(--paragraph-small-size);
+  color: var(--secondary-color);
+  max-width: 65ch;
+  margin: 2rem auto;
+}

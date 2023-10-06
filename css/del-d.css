@@ -36,7 +36,7 @@
 }
 .card-wrapper:nth-child(2),
 .card-wrapper:nth-child(3) {
-  background-color: var(--accent-color);
+  background-color: #e3e9d2;
   border-radius: 1rem;
 
   & h1,
@@ -44,11 +44,11 @@
     color: var(--secondary-color);
   }
   & p {
-    color: var(--primary-color2);
+    color: var(--accent-color);
   }
 }
 .card-wrapper:nth-child(4) {
-  background-color: var(--secondary-color);
+  background-color: dimgray;
   border-radius: 1rem;
   & h1,
   h2 {

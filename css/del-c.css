@@ -1,10 +1,17 @@
-
+.container > img {
+  filter: grayscale(100%) brightness(1.4);
+}
 h1 {
   font-family: var(--font-display);
   color: var(--accent-color);
+  z-index: 2;
 }
 p {
   font-family: var(--font-paragraph);
+  z-index: 2;
+}
+.container {
+  margin-bottom: 1rem;
 }
 .container > p {
   color: var(--secondary-color);
@@ -19,9 +26,10 @@ p {
   }
   > img {
     background-color: var(--accent-color);
+    z-index: 2;
   }
 }
-@media (width < 500px) {
+@media (width < 560px) {
   .container {
     margin: 1rem 0;
     padding: 0;
@@ -45,7 +53,7 @@ p {
   }
 }
 
-@media (width >= 500px) and (width <= 850px) {
+@media (width >= 560px) and (width <= 850px) {
   .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

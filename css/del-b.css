@@ -1,4 +1,3 @@
-
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -39,6 +38,7 @@ p {
   background-color: var(--accent-color);
   border-radius: 0 0 0.7rem 0.7rem;
   justify-content: space-evenly;
+
   > label {
     color: var(--primary-color2);
   }
@@ -49,15 +49,28 @@ p {
   > div:has(h1) {
     display: flex;
     background-color: var(--primary-color1);
-    border-radius: 0.7rem 0.7rem 0 0;
+    border-radius: 0 0 0.7rem 0.7rem;
     > p {
       padding: 0 1rem 1.5rem 1rem;
       color: var(--accent-color);
     }
   }
 }
-
-@media (width <= 900px) {
+@media (width <= 500px) {
+  .container > div {
+    margin: 2rem 5%;
+  }
+  .container > div > div:has(h1) {
+    justify-content: space-between;
+    align-items: last baseline;
+  }
+  .container > div:first-child > div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+@media (width <= 900px) and (width > 500px) {
   .container > div {
     margin: 2rem 5%;
     > div:has(h1) {
@@ -82,9 +95,6 @@ p {
     > div > div:has(h1) {
       flex-direction: column;
 
-      & div {
-        padding: 1rem 1rem 0.1rem 1rem;
-      }
       & h1 {
         font-family: var(--font-display);
         font-size: var(--display-small-size);
@@ -104,6 +114,7 @@ p {
       > div:last-child {
         display: flex;
         flex-direction: column;
+        padding: 1.9rem 1rem 1.9rem 1rem;
 
         & label {
           margin: 0.5rem 0;

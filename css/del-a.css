@@ -39,13 +39,18 @@ p {
   justify-content: center;
   gap: 1.2rem;
 }
-.icons > img {
+.icons > img:first-child {
   width: 50px;
   background-color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: 25px;
 }
+.icons > img:last-child {
+  width: 50px;
 
+  border-radius: 25px;
+  background-color: var(--primary-color1);
+}
 @container card (width < 515px) {
   .card {
     > img {
@@ -77,12 +82,7 @@ p {
     font-family: var(--font-paragraph);
     font-size: var(--paragraph-small-size);
   }
-  .icons > img {
-    width: 50px;
-    background-color: var(--secondary-color);
-    padding: 0.5rem;
-    border-radius: 1rem;
-  }
+
   div:has(h1) {
     margin: 0 0 1.5rem 0;
   }
@@ -123,13 +123,6 @@ p {
   }
   div:has(h1) {
     margin: 0 0 3.5rem 0;
-  }
-
-  .icons > img {
-    width: 50px;
-    background-color: var(--secondary-color);
-    padding: 0.5rem;
-    border-radius: 25px;
   }
 }
 @container card (width > 690px) and (width <= 865px) {
