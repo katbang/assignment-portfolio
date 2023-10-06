@@ -95,7 +95,7 @@ p {
     grid-auto-rows: auto;
     > p {
       grid-area: 2/4/3/7;
-      margin: 2rem 0 0 1rem;
+      margin: 1rem 0 0 1rem;
       font-size: var(--paragraph-medium-size);
     }
     > img {
